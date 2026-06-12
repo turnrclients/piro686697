@@ -241,7 +241,281 @@
         body.custom-alert-open {
             overflow: hidden;
         }
-    </style></head>
+    </style>
+<style>
+
+.seo-modal-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+    z-index:999999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.seo-modal-box{
+    width:100%;
+    max-width:550px;
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    font-family:'Quicksand', sans-serif;
+}
+
+.seo-modal-header{
+    padding:18px 22px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid #eee;
+}
+
+.seo-modal-header h3{
+    margin:0;
+    font-size:22px;
+    font-weight:700;
+}
+
+#closeSeoModal{
+    border:none;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.seo-modal-body{
+    padding:22px;
+}
+
+.seo-modal-body label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.seo-modal-body textarea,
+.seo-modal-body input{
+    width:100%;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:12px;
+    margin-bottom:18px;
+    outline:none;
+}
+
+.seo-modal-body textarea{
+    height:120px;
+    resize:none;
+}
+
+.seo-modal-footer{
+    padding:18px 22px;
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    border-top:1px solid #eee;
+}
+
+.seo-modal-footer button{
+    border:none;
+    padding:10px 22px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    color: #FFF;
+  background: #3b3b3b;
+}
+
+#saveSeoUpdate{
+    background:linear-gradient(135deg,#e39a4e,#fb1b1b);
+    color:#fff;
+}
+
+</style>
+<style>
+
+.seo-modal-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+    z-index:999999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.seo-modal-box{
+    width:100%;
+    max-width:550px;
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    font-family:'Quicksand', sans-serif;
+}
+
+.seo-modal-header{
+    padding:18px 22px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid #eee;
+}
+
+.seo-modal-header h3{
+    margin:0;
+    font-size:22px;
+    font-weight:700;
+}
+
+#closeSeoModal{
+    border:none;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.seo-modal-body{
+    padding:22px;
+}
+
+.seo-modal-body label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.seo-modal-body textarea,
+.seo-modal-body input{
+    width:100%;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:12px;
+    margin-bottom:18px;
+    outline:none;
+}
+
+.seo-modal-body textarea{
+    height:120px;
+    resize:none;
+}
+
+.seo-modal-footer{
+    padding:18px 22px;
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    border-top:1px solid #eee;
+}
+
+.seo-modal-footer button{
+    border:none;
+    padding:10px 22px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    color: #FFF;
+  background: #3b3b3b;
+}
+
+#saveSeoUpdate{
+    background:linear-gradient(135deg,#e39a4e,#fb1b1b);
+    color:#fff;
+}
+
+</style>
+<style>
+
+.seo-modal-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+    z-index:999999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.seo-modal-box{
+    width:100%;
+    max-width:550px;
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    font-family:'Quicksand', sans-serif;
+}
+
+.seo-modal-header{
+    padding:18px 22px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid #eee;
+}
+
+.seo-modal-header h3{
+    margin:0;
+    font-size:22px;
+    font-weight:700;
+}
+
+#closeSeoModal{
+    border:none;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.seo-modal-body{
+    padding:22px;
+}
+
+.seo-modal-body label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.seo-modal-body textarea,
+.seo-modal-body input{
+    width:100%;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:12px;
+    margin-bottom:18px;
+    outline:none;
+}
+
+.seo-modal-body textarea{
+    height:120px;
+    resize:none;
+}
+
+.seo-modal-footer{
+    padding:18px 22px;
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    border-top:1px solid #eee;
+}
+
+.seo-modal-footer button{
+    border:none;
+    padding:10px 22px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    color: #FFF;
+  background: #3b3b3b;
+}
+
+#saveSeoUpdate{
+    background:linear-gradient(135deg,#e39a4e,#fb1b1b);
+    color:#fff;
+}
+
+</style>
+</head>
 <body class="" style="">
 <div class="" id="wrapper" style="pointer-events: auto;">
 <div class="" data-src="header.html" id="header"></div>
@@ -264,7 +538,54 @@
 </div>
 </article>
 </div>
-</div><section class="section-wrapper ourteam-6" id="section-wdquubor78j">
+</div><section class="about-56-section section-wrapper about-56" id="section-9p3zcsplbfb">
+<div class="container">
+<div class="row about-56-row">
+<!-- LEFT CONTENT -->
+<div class="col-md-6 col-sm-6 about-56-left">
+<span class="about-56-subtitle">
+                    Modern Architecture
+                </span>
+<h2 class="">
+                    CRAFTING ELEGANT<br class=""/>
+                    SPACES WITH<br class=""/>
+                    TIMELESS DESIGN
+                </h2>
+<p class="about-56-text">
+                    We combine innovation, creativity, and functionality to create
+                    architectural and interior experiences that inspire modern living.
+                    Every project is designed with precision, elegance, and attention
+                    to every detail.
+                </p>
+<ul class="list-unstyled about-56-list">
+<li class="">
+<i class="bi bi-check2"></i>
+                        Smart and innovative architectural planning
+                    </li>
+<li class="">
+<i class="bi bi-check2"></i>
+                        Premium luxury interior styling solutions
+                    </li>
+<li class="">
+<i class="bi bi-check2"></i>
+                        Functional spaces with timeless aesthetics
+                    </li>
+</ul>
+<a class="about-56-readmore" href="#" style="cursor: pointer;">
+                    Explore More
+                </a>
+</div>
+<!-- RIGHT IMAGE -->
+<div class="col-md-6 col-sm-6 about-56-img-wrap">
+<img alt="Modern Architecture" class="img-responsive updateImg" src="assets/images/about-56.jpg?v=1781264129"/>
+<div class="about-56-exp-box">
+<small class="">Years Of Experience</small>
+<h3 class="">15+</h3>
+</div>
+</div>
+</div>
+</div>
+</section><section class="section-wrapper ourteam-6" id="section-wdquubor78j">
 <div class="container ourteam-6-container">
 <div class="row">
 <!-- LEFT CONTENT -->
@@ -276,8 +597,7 @@
                     We create inspiring
                     architectural experiences
                     that combine innovation,
-                    elegance, and modern living.
-                </h2>
+                    elegance, and modern living.....</h2>
 <p class="ourteam-6-description">
                     Our talented designers and architects work together to craft
                     premium spaces with timeless aesthetics, functionality, and
@@ -294,7 +614,7 @@
 <!-- MEMBER -->
 <div class="col-sm-4 col-xs-12 ourteam-6-profile">
 <div class="ourteam-6-card">
-<img alt="Team Member" class="img-responsive ourteam-6-img updateImg" src="assets/images/our-team-6-1.jpeg"/>
+<img alt="Team Member" class="img-responsive ourteam-6-img updateImg" src="assets/images/our-team-6-1.jpeg?v=1781264013?v=1781264044?v=1781264129"/>
 <div class="ourteam-6-content">
 <h4 class="ourteam-6-name">
                                     Samar Verma
@@ -308,7 +628,7 @@
 <!-- MEMBER -->
 <div class="col-sm-4 col-xs-12 ourteam-6-profile">
 <div class="ourteam-6-card">
-<img alt="Team Member" class="img-responsive ourteam-6-img updateImg" src="assets/images/our-team-6-2.jpeg"/>
+<img alt="Team Member" class="img-responsive ourteam-6-img updateImg" src="assets/images/our-team-6-2.jpeg?v=1781264013?v=1781264044?v=1781264129"/>
 <div class="ourteam-6-content">
 <h4 class="ourteam-6-name">
                                     Neha Chauhan
@@ -322,7 +642,7 @@
 <!-- MEMBER -->
 <div class="col-sm-4 col-xs-12 ourteam-6-profile">
 <div class="ourteam-6-card">
-<img alt="Team Member" class="img-responsive ourteam-6-img updateImg" src="assets/images/our-team-6-3.jpeg"/>
+<img alt="Team Member" class="img-responsive ourteam-6-img updateImg" src="assets/images/our-team-6-3.jpeg?v=1781264013?v=1781264044?v=1781264129"/>
 <div class="ourteam-6-content">
 <h4 class="ourteam-6-name">
                                     Rohan Bedi
@@ -333,6 +653,43 @@
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="section-wrapper home-34" id="section-dzld3j4f7zq">
+<div class="container">
+<h2 class="home-34 section-title">Welcome to Your Real Estate Journey</h2>
+<p class="home-34 section-subtitle">Find the perfect home, buy your dream property, or sell with confidence</p>
+<div class="row">
+<div class="col-sm-6 col-md-4">
+<div class="home-34 card">
+<img alt="Find Rental Homes" class="updateImg" src="assets/images/home-34-1.jpg?v=1781264129"/>
+<h3 class="home-34 card-title">Find Rentals</h3>
+<p class="home-34 card-text">
+						Explore a wide range of rental properties, from modern apartments to family homes. Find a space
+						that fits your lifestyle and budget.
+					</p>
+</div>
+</div>
+<div class="col-sm-6 col-md-4">
+<div class="home-34 card">
+<img alt="Buy a Home" class="updateImg" src="assets/images/home-34-2.jpg?v=1781264129"/>
+<h3 class="home-34 card-title">Buy a Home</h3>
+<p class="home-34 card-text">
+						Discover your dream home from our exclusive listings. Whether it’s your first home or an
+						investment property, we’ll help you find the perfect match.
+					</p>
+</div>
+</div>
+<div class="col-sm-6 col-md-4">
+<div class="home-34 card">
+<img alt="Sell Your Property" class="updateImg" src="assets/images/home-34-3.jpg?v=1781264129"/>
+<h3 class="home-34 card-title">Sell Your Property</h3>
+<p class="home-34 card-text">
+						Get the best value for your property with expert marketing and negotiation. List with us and
+						reach qualified buyers quickly and efficiently.
+					</p>
 </div>
 </div>
 </div>
@@ -410,4 +767,5 @@
                         });
                     </script>
 <script src="assets/js/common_js/image_uploader.js"></script>
-</body></html>
+<div class="scroll-arrow top" style="display: none;">⬆</div><div class="scroll-arrow bottom" style="display: none;">⬇</div>
+<div class="scroll-arrow top" style="display: none;">⬆</div><div class="scroll-arrow bottom" style="display: none;">⬇</div></body></html>
